@@ -8,7 +8,8 @@ def map(array)
 end
 
 
-def reduce(array, ret = nil)
+def reduce(array, start = nil)
+  ret = start
   
   array.length.times do |i|
     ret = yield(ret, array[i])
