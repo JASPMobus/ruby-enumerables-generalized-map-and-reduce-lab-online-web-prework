@@ -6,3 +6,8 @@ def map(array)
   
   array
 end
+
+
+def reduce(array)
+  array.length.times do |i|
+    array
