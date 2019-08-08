@@ -9,5 +9,11 @@ end
 
 
 def reduce(array)
+  ret = nil
+  
   array.length.times do |i|
-    array
+    ret = yield(ret, array)
+  end
+  
+  ret
+end
