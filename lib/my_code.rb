@@ -8,7 +8,7 @@ def map(array)
 end
 
 
-def reduce(array, start = nil)
+def reduce(array, start = 0)
   ret = start
   
   array.length.times do |i|
