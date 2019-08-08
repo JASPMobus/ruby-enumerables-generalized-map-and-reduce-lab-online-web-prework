@@ -12,7 +12,7 @@ def reduce(array, start = 0)
   ret = start;
   
   array.length.times do |i|
-    ret = yield(ret, array)
+    ret = yield(ret, array[i])
   end
   
   ret
